@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>田王乐的学习汇报</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-color: #eee;
+      }
+      .yinYing {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 0px 1px 3px 0px;
+      }
+      .flex {
+        display: flex;
+      }
+      .baiSe {
+        background-color: white;
+      }
+      .flex1 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+      .mg8 {
+        margin: 8px;
+      }
+      .mgr8 {
+        margin-right: 8px;
+      }
+      .mgt8 {
+        margin-top: 8px;
+      }
+      .daoHang {
+        padding: 10px 20px;
+        border-bottom: 1px solid rgb(190, 190, 190);
+        font-size: 14px;
+        color: #666;
+      }
+      @media (max-width: 600px) {
+        .ceBian {
+          display: none;
+        }
+        .neiRong {
+          flex-direction: column;
+        }
+        .youQu {
+          margin-left: 8px;
+        }
+        .shuJU {
+          margin: 0 0 8px;
+          flex: auto;
+        }
+      }
+      .neiRong::-webkit-scrollbar {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="flex">
+    <div style="width: 200px; z-index: 2" class="ceBian baiSe yinYing">
+      <div
+        style="padding：10px;align-items:center;justify-content:center;border-bottom:1px solid #999"
+        class="flex"
+      >
+        <img
+          src="https://img0.baidu.com/it/u=2992125998,864588357&fm=253&fmt=auto&app=138&f=JPEG?w=351&h=500"
+          height="120px"
+          alt=""
+        />
+        <div style="margin-left: 20px">田王乐</div>
+      </div>
+      <div class="flex1">
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+        <div class="daoHang">导航</div>
+      </div>
+    </div>
+    <div class="flex1 flex column">
+      <div style="height: 60px; z-index: 1" class="baiSe yinYing">
+        <h1>田王乐的学习汇报</h1>
+      </div>
+      <div style="overflow: auto" class="neiRong flex1 flex">
+        <div style="flex: 3" class="flex column mg8">
+          <div class="flex column">
+            <div style="height: 200px" class="baiSe mgt8 yinYing">
+              <h3>关于网站</h3>
+              <p></p>
+              <p></p>
+            </div>
+            <div style="height: 200px" class="baiSe mgt8 yinYing">
+              <h3>关于Ontology</h3>
+              <p></p>
+            </div>
+            <div style="height: 200px" class="baiSe mgt8 yinYing">
+              <h3>关于绞吸挖泥船定位钢桩纵向缓冲系统的分析计算</h3>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
